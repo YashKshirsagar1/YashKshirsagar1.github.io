@@ -19,44 +19,120 @@
             background-color: grey;
             color: white;
         }
+        #multi-text {
+            color: aquamarine;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 5px red;
+        }
+        .multi-img {
+            display: block;
+            margin: 10px auto;
+            width: 50%;
+        }
+        .list {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;;
+
+        }
+
+        h2 {
+            font-size: 30px; 
+            text-align: center;
+            font-family:'Times New Roman', Times, serif; 
+            text-decoration: underline;
+            animation: move-left-to-right 13s linear infinite;
+        }
+
+        @keyframes move-left-to-right {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+        }
+        .green-text {
+            font-size: 20px;
+            font-weight: lighter;
+            color: darkgreen;
+        }
+        .highlighted-text {
+            background-color: yellow;
+            font-style: italic;
+        }
+        p {
+            font-size: 20px;
+        }
+        #eagle-logo {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            width: 25%;
+            animation: move-left-to-right-logo 10s linear forwards;
+            
+        }
+
+        @keyframes move-left-to-right-logo {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(100%);
+         opacity: 0;
+        }
+        }
     </style>
 </head>
 
-<body bgcolor="#B8FAC5">
+<body style="background-color:#B8FAC5">
     <h1>The EPS Golf Team</h1>
     <h2>Let's hit them long and straight!</h2>
+    <img src="images/eagle.png" alt="EPS Eagle" id="eagle-logo">
 
-    <p>Playing on the EPS golf team is one of my favorite things about school because:</p>
+    <p id="multi-text">Playing on the EPS golf team is one of my favorite things about school because:</p>
+    <div class="list">
     <ol>
-        <li>I am outdoors in nature</li>
+        <li>I am outdoors in <span class="green-text">nature</span></li>
         <li>It makes me more relaxed and calm</li>
         <li>It's challenging and fun</li>
         <li>I get to spend a lot of time with friends</li>
     </ol>
-    <p>To find more information about the EPS golf team and other EPS athletic teams <a href="https://www.eastsideprep.org/athletics/upper-school/" target="blank">click here.</a></p>
-    <p>Our <mark>talented</mark> team:</p>
-    <img src="images/teamphoto.png" alt="EPS Boys Golf Team" style="width:50%">
-    
+    </div>
+    <h3 style="text-decoration: underline; font-weight: lighter;">To find more information about the EPS golf team and other EPS athletic teams <a href="https://www.eastsideprep.org/athletics/upper-school/" target="blank">click here.</a></h3>
+    <p>Our <span class="highlighted-text">talented</span> team:</p>
+    <img src="images/teamphoto.png" alt="EPS Boys Golf Team" class="multi-img">
+    <br>
+    <p>Golf courses that we play on:</p>
     <!--New tags: table youtube google maps-->
     <table>
             <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
+                <th>Twin Rivers</th>
+                <th>Newcastle</th>
+                <th>Bellevue Golf Course</th>
             </tr>
             <tr>
-                <td>Tuscan Chicken Pasta</td>
-                <td>Cajun Shrimp</td>
-                <td>Asian Chicken Fried Rice</td>
+                <td>Poorly maintained</td>
+                <td>Plays pure</td>
+                <td>Pretty maintained</td>
             </tr>
             <tr>
+                <td>2/10</td>
                 <td>9/10</td>
-                <td>10/10</td>
                 <td>7.5/10</td>
             </tr>
     </table>
-    
+    <br>
+    <p>Our role models:</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/twHMwAV8qfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.9296604174365!2d-122.18864138472412!3d47.68578597918995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901294180e63e7%3A0x7dfd50673043a39d!2s9427%20116th%20Ave%20NE%2C%20Kirkland%2C%20WA%2098033!5e0!3m2!1sen!2sus!4v1679435140469!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <p>Our home course:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.2253309219604!2d-121.89009438472928!3d47.56340407918184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54907a12d5ce6389%3A0x3e0ca0324091705!2sTwin%20Rivers%20Golf%20Course!5e0!3m2!1sen!2sus!4v1679587438511!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
