@@ -40,13 +40,15 @@
             text-align: center;;
 
         }
-
         h2 {
             font-size: 30px; 
             text-align: center;
             font-family:'Times New Roman', Times, serif; 
             text-decoration: underline;
             animation: move-left-to-right 13s linear infinite;
+        }
+        #container {
+            overflow: hidden;
         }
 
         @keyframes move-left-to-right {
@@ -57,6 +59,7 @@
             transform: translateX(100%);
         }
         }
+
         .green-text {
             font-size: 20px;
             font-weight: lighter;
@@ -93,7 +96,9 @@
 
 <body style="background-color:#B8FAC5">
     <h1>The EPS Golf Team</h1>
+    <div id="container">
     <h2>Let's hit them long and straight!</h2>
+    </div>
     <img src="images/eagle.png" alt="EPS Eagle" id="eagle-logo">
 
     <p id="multi-text">Playing on the EPS golf team is one of my favorite things about school because:</p>
