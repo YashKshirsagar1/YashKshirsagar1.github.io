@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .grid-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 35% 35% auto;
+            grid-gap: 10px;
+            padding-left: 20px;
+        }
+        
+        .grid-item{
+            text-align: center;
+            font-size: 16px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+        .main1 {
+            grid-column: 2;
+            grid-row: 1;
+            border-radius: 0 20px 20px 0;
+            overflow: hidden;
+            height: 350px;
+        }
+        .image1 {
+            grid-column: 1;
+            grid-row: 1;
+            border-radius: 12px;
+            box-shadow: 25px 0px lightblue;
+            height: 350px;
+        }
+        .main2 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+            border-radius: 12px;
+        }
+        .main3 {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+        .image2 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .image3 {
+            grid-column: 2;
+            grid-row: 3;
+        }
+        .image4 {
+            grid-column: 3;
+            grid-row: 3;
+        }
+        .video {
+            grid-column: 2;
+            transform: translateX(-25%);
+        }
+    </style>
+</head>
+<body color="bg-dark">
+    <!--bootstrap container for content and layout control-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" style="width:100px; padding-left:10px;">
+        </a>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title" style="text-align: center; padding: 40px;">
+        <h1 class="display-4">VEF Blind School</h1>
+    </div>
+    
+    <!--bootstrap carousel!-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 270px">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+
+        <!-- first slide-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/blind1.png" alt="Blind Kids" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>VEF Foundation</h3>
+                    <p>Students taking a pose!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/blind2.png" alt="Students Learning" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Students in Class</h3>
+                    <p>Teachers at work!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/blind3.png" alt="Student Reading" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Student Reading</h3>
+                    <p>Reading braille!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/blind4.png" alt="Students Playing" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Students Playing</h3>
+                    <p>Having Fun!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/blind5.png" alt="Students Gardening" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Helping the Environment</h3>
+                    <p>Students Gardening!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Left and right controls/icons -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    <div class="title" style="text-align: center; padding: 40px;">
+        <h1 class="display-4">How We Started</h1>
+    </div>
+
+    <!--Let's add a grid-->
+    <div class="grid-container">
+        <div class="grid-item main1"><p>Founded in August 2010, the School for the Blind at Vivek Education Foundation (VEF) provides training and education, free of cost, to children and adults who are visually impaired so they can acquire communication skills, and become socially self-sufficient and independent citizens of the community. The School also assists children with their academic coursework towards completion of their grades.
+            VEF started in 2005 as a small Non-Government Agency in the home of Mr. and Mrs. Vivek Shinde of Mankhurd, a suburb of Mumbai, with the primary goal of providing educational support for children from the neighboring slums. 
+            </p>
+        </div>
+        <div class="grid-item image1"><img src="images/kidline.png" alt="Kids in line" class="d-block w-100"></div>
+        <div class="grid-item main2"> <img src="images/student1.png" alt="Student with famous actor" class="d-block w-100">
+        <br>
+        <p>The Shindes used personal funds to purchase supplies and books for these children as well as make contributions towards their mainstream school tuition fees. Very soon, their passion expanded into helping divorced and widowed women who needed financial support and resources to pursue educational programs or start small businesses.</p></div>
+        <div class="main3"><h1 class="display-4" style="font-size: 50px; text-align: center;">More About VEF</h1></div>
+        <div class="image2"><img src="images/family.png" alt="Family Founders" class="d-block" style="width: 50%"></div>
+        <div class="main4"><p>Founders of the VEF Trust: The Shinde Family </p></div>
+        <div class="image3"><img src="images/deepti.png" alt="Founder Deepti" class="d-block" style="width: 60%"></div>
+        <div class="main5"><p>Co-founder and teacher Deepti Shinde </p></div>
+        <div class="image4"><img src="images/table.png" alt="Student playing tabla" class="d-block" style="width: 89%"></div>
+        <div class="main6"><p>Blind student playing classical Indian instrument</p></div>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/r12_Qd-tjkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+    
+    <!-- Poll Section -->
+    <div class="container" style="padding-top: 40px;">
+        <form>
+            <div class="row">
+                <div class="col-md-7">
+                    <h3 class="display-4">Do you support donating to the blind school?</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pollOption" id="option1" value="Yes">
+                        <label class="form-check-label" for="option1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pollOption" id="option2" value="No">
+                        <label class="form-check-label" for="option2">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pollOption" id="option3" value="Undecided">
+                        <label class="form-check-label" for="option3">
+                            Undecided
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
