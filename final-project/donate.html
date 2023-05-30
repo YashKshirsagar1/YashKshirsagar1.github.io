@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        margin-bottom: 4rem; 
+    }
+
+    .container1 {
+        max-width: 1500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        padding-left: 20px;
+
+    }
+    
+    .container2 {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: grid;
+        grid-template-columns: 35% 35% auto;
+        grid-gap: 0px;
+        padding-left: 20px;
+    }
+
+    .grid-item {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        background-color: lightblue;
+    }
+
+    .grid-item1 {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #049DD9;
+    }
+
+    .grid-item2 {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #05AFF2;
+    }
+
+    .grid-item3 {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #6AB9D9;
+    }
+
+    .header {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    .image1 {
+        padding-left: 0px;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    .donate-info {
+        margin-bottom: 2rem;
+    }
+    .donate-button1 {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 9999;
+    }
+
+    .donate-button1 a {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #0099ff;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 30px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .donate-button1 a:hover {
+        background-color: #0077cc;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        padding-top: 0px;
+        width: 100x;
+        height: 100px;
+        transform: translateY(150%);
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("images/leftarrow.png");
+        transform: translatex(1800%);
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("images/rightarrow.png");
+    }
+
+    .swoosh-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .swoosh-text {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        color: #333;
+    }
+    </style>
+</head>
+<body>
+    <!--bootstrap container for content and layout control-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" style="width:100px; padding-left:10px;">
+        </a>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link active" href="donate.html">You Can Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <div class="grid-item header">
+            <h1 class="display-4">You Can Help</h1>
+            <p class="pt-1">FACT: India is home to the largest blind population in the world. Of the 37 million blind people of the world, 15 million are in India. Due to a shortage of resources, skilled medical providers and organized efforts, sadly, most of these cases are go untreated and the quality of life of the people affected is greatly compromised.</p>
+        </div>
+        <div class="grid-item image1">
+            <img src="images/donate1.png" alt="Reading Braille" class="w-100 d-block">
+        </div>
+        
+        <div class="donate-button1">
+            <a href="mailto:info@bemysight.org">Donate Now</a>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="grid-item1 col1">
+            <img src="images/donate2.png" alt="Medical Device" class="w-100 d-block">
+            <p class="pt-4">There are very few establishments in India that are dedicated to providing care and instruction and are accessible to those that require it.</p>
+        </div>
+        <div class="grid-item2 col2">
+            <img src="images/donate3.png" alt="People" class="w-100 d-block">
+            <p class="pt-4">VEF’s main source of funding comes from the professional incomes of The Shinde family members. The costs of operating an organization such as this, and purchasing supplies and equipment are increasing with the number of students. VEF’s mission of providing lifelong learning and a state of the art support system cannot be fulfilled without securing additional financial resources.</p>
+        </div>
+        <div class="grid-item3 col3">
+            <!--bootstrap carousel!-->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 270px">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- first slide-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/rudra.png" alt="Rudra" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pallavi.png" alt="Pallavi" class="d-block w-100" style="height: 245px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/babita.png" alt="Babita" class="d-block w-100" style="height: 245px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/walking.png" alt="Student Walking" class="d-block w-100" style="height: 245px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <p>Our students are incredibly resilient and determined to overcome the challenges they face. Despite their visual impairment, these students exhibit an unwavering enthusiasm for learning and a remarkable ability to adapt to their environment.</p>
+        </div>
+    </div> 
+    
+    <div class="swoosh-container">
+        <div class="swoosh-text">
+            <h2 class="display-4">We Need You</h2>
+            <p>
+                The purchase of books and equipment for learning such as braille embossers and printers, personal computers, translation software, scanners and readers, note takers and many such technology tools to enhance a visually impaired child’s ability to learn effectively.<br>
+                Contribute towards the construction of a hostel for students.<br>
+                Help in the maintenance of the establishment.<br>
+                Provide resources and support for our students and their families.<br>
+                Thank you for considering VEF to give your gift today and helping us to continue our successful work in caring for the blind. VEF is a registered NGO and your donation is tax-deductible. Please <a href="mailto:info@bemysight.org">contact us</a> for further information.
+            </p>
+        </div>
+    </div>
+
+    <a class="donate-button" href=mailto:info@bemysight.org>Donate</a>
+    <br><br><br><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 VEF Blind School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-end">
+                        <li class="list-inline-item"><a href="https://www.youtube.com/@vivekeducationfoundation3039/featured" target="_blank"><img class="footer-icon" src="images/youtube.png" alt="Youtube logo" style="width: 10%;"></a></li>
+                        <li class="list-inline-item"><a href="mailto:info@bemysight.org"><img class="footer-icon" src="images/mail.png" alt="Mail logo" style="width: 10%"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const swooshContainer = document.querySelector('.swoosh-container');
+            let prevScrollPos = window.pageYOffset;
+    
+            window.addEventListener('scroll', () => {
+                const currentScrollPos = window.pageYOffset;
+                if (prevScrollPos > currentScrollPos) {
+                    swooshContainer.style.transform = 'translateY(100%)';
+                } else {
+                    swooshContainer.style.transform = 'translateY(0)';
+                }
+                prevScrollPos = currentScrollPos;
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
